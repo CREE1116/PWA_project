@@ -5,8 +5,9 @@ function Home(props) {
   return (
     <div>
       <h1>home</h1>
-      <Link to={"/anime"}>Anime</Link>
-      <Link to={"/manga"}>Manga</Link>
+      <Link to={"/PWA_project/Manga/Recomend"}>Manga/Recomend</Link>
+      <Link to={"/PWA_project/Anime/Recomend"}>Anime/Recomend</Link>
+      <Link to={"/PWA_project/Anime/Home"}>Anime/home</Link>
     </div>
   );
 }

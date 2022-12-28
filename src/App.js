@@ -10,10 +10,10 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/PWA_project" element={<Home />} />
-        <Route path="/Manga/Recomend" element={<MangaRecomend />} />
-        <Route path="/Anime/Recomend" element={<AnimeRecomend />} />
-        <Route path="/Anime/genre/:genreId" element={<GenreHome />} />
-        <Route path="/Anime/Home" element={<AnimeHome />} />
+        <Route path="/PWA_project/Manga/Recomend" element={<MangaRecomend />} />
+        <Route path="/PWA_project/Anime/Recomend" element={<AnimeRecomend />} />
+        <Route path="/PWA_project/Anime/genre/:genreId" element={<GenreHome />} />
+        <Route path="/PWA_project/Anime/Home" element={<AnimeHome />} />
       </Routes>
     </BrowserRouter>
   );
