@@ -1,25 +1,21 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-
+import React from "react";
+import { Route, Routes, Router, BrowserRouter } from "react-router-dom";
+import Home from "./routes/Home";
+import MangaRecomend from "./routes/MangaRecomend";
+import AnimeRecomend from "./routes/AnimeRecomend";
+import AnimeHome from "./routes/AnimeHome";
+import GenreHome from "./routes/GenreHome";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/Manga/Recomend" element={<MangaRecomend />} />
+        <Route path="/Anime/Recomend" element={<AnimeRecomend />} />
+        <Route path="/Anime/genre/:genreId" element={<GenreHome />} />
+        <Route path="/Anime/Home" element={<AnimeHome />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
