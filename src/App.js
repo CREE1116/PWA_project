@@ -9,7 +9,7 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/PWA_project" element={<Home />} />
         <Route path="/Manga/Recomend" element={<MangaRecomend />} />
         <Route path="/Anime/Recomend" element={<AnimeRecomend />} />
         <Route path="/Anime/genre/:genreId" element={<GenreHome />} />
